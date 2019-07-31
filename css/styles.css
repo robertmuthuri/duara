@@ -41,4 +41,27 @@
    100% {
        left: -400%;
    }
-}
+}  
+#nav {
+    height: 70px;
+    background: black;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+  }
+  
+  #logo {
+    color:white;
+    padding: 20px;
+    font-size: 18px;
+    transition: all ease .5s;
+  }
+  
+  #nav.change {
+    background: red;
+    transition: all ease .5s;
+  }
+  
+  
