@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/gig.js"></script>
+    <title>event form</title>
+  </head>
+  <body>
+    <form id="gig">
+      <div class="form-group">
+        <label for="start-date">start Date</label>
+        <input class="form-control" type="date" id="start-date">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="finish-date">finish-date</label>
+        <input class="form-control" type="date"  id="finish-date">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="gig-type">gig type</label>
+        <select class="form-control" id="gig-type">
+          <option value="concert">concert</option>
+          <option value="private-party">private party</option>
+          <option value= "club-event">club event</option>
+          <option value="festival">festival</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="location">gig location</label>
+        <input class="form-control" type="text"  id="location">
+      </div>
+      <button type="submit" class="btn">submit</button>
+  </body>
+</html>
