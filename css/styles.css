@@ -1,3 +1,21 @@
 * {
     background-color: black;
 }
+
+h4 {
+    color:white;
+    font-family: 'ABeeZee', sans-serif;
+    bottom: 0;
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:5px;
+    display: justify;
+}
+span {
+    font-family: 'Aldrich', sans-serif;
+    background-color:yellow;
+    padding:14px;
+    color:black;
+}
