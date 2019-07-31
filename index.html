@@ -2,74 +2,162 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>DUARA</title>
+      <link href="css/bootstrap.css" rel="stylesheet" type ="text/css">
     <link href="css/styles.css" rel="stylesheet" type ="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" type ="text/css">
+
   </head>
   <body>
+    <div class="main">
+      <div id="myBtnContainer">
+             <div class="header">
+                 <button class="btn active logo" onclick="filterSelection('all')">All Artists </button>
+                 <div class="header-right">
+                     <button class="btn" onclick="filterSelection('musicians')">Musicians</button>
+                     <button class="btn" onclick="filterSelection('comedians')">Comedians</button>
+                     <button class="btn" onclick="filterSelection('djs')">DJs</button>
+                     <button class="btn" onclick="filterSelection('mcs')">MCs</button>
+                 </div>
+             </div>
 
-    <div class ="container">
-      <button type="button" name="login"><a href ="login.html">LOGIN</a></button>
-      <button type="button" name="signup"><a href ="signup.html">SIGNUP</a></button>
-      <h3>PROMOTER FORM</h3>
-      <form id ="promoter">
-        <label= "promoter-name">Promoter Name:</label>
-        <input type="text" name="promoter-name">
-        <br>
-        <br>
-        <label= "budget">Budget:&nbsp&nbsp&nbsp&nbsp</label>
-        <input type="text" name="budget">
-        <br>
-        <br>
-        <label= "rates">Rates:&nbsp&nbsp&nbsp&nbsp</label>
-        <input type="text" name="rates">
-      </form>
-      <br>
-      <br>
-
-      <h3>EVENT FORM</h3>
-      <form id ="promoter">
-        <label= "start-date">Start Date:</label>
-        <input type="date" name="start-date">
-        <br>
-        <br>
-        <label= "end-date">End Date:</label>
-        <input type="date" name="end-date">
-        <br>
-        <br>
-        <label= "location">Location</label>
-        <input type="text" name="location">
-        <br>
-        <br>
-        <label= "type">Type</label>
-        <select class="type" name="event-type">
-          <option value="birthday">Concert</option>
-          <option value="birthday">Club event</option>
-          <option value="birthday">Festival</option>
-          <option value="birthday">Private Party</option>
-        </select>
-      </form>
-      <br>
-      <br>
-
-      <h3>CONTACT FORM</h3>
-      <form id ="contacts">
-        <label= "phone">Phone:</label>
-        <input type="text" name="phone">
-        <br>
-        <br>
-        <label= "email">Email:</label>
-        <input type="text" name="email">
-        <br>
-        <br>
-        <label= "street">Street/City/Country:</label>
-        <input type="text" name="street">
-        <br>
-        <br>
-        <label= "address">Address</label>
-        <input type="text" name="address">
-      </form>
+      </div>
+      <div class="row">
+              <div class="column musicians">
+                  <div class="content" id="drake">
+                      <img src="images/drake.jpg" alt="Veggie" style="width: 100%">
+                      <h4>DRAKE</h4>
+                      <p class="description">OVO SOUND</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum</p> <br>
+                      <p><button class="open-button" id="bookDrake" value="DRAKE" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column musicians">
+                  <div class="content" id="edSheeran">
+                      <img src="images/edsheeran.jpeg" alt="Veggie Delux" style="width: 100%">
+                      <h4>ED SHEERAN</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookEdSheeran" value="ED-SHEERAN" onclick="openForm();">VIEW PROFILE</button>
+                      </p>
+                  </div>
+              </div>
+              <div class="column musicians">
+                  <div class="content" id="migos">
+                      <img src="images/migos.jpg" alt="Spicy Vegg" style="width: 100%">
+                      <h4>MIGOS</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookMigos" value="MIGOS" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column comedians">
+                  <div class="content" id="kevinHart">
+                      <img src="images/kevin.jpeg" alt="Veggie" style="width: 100%">
+                      <h4>KEVIN HART</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookKevinHart" value="KEVIN HART" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column comedians">
+                  <div class="content" id="eddieGriffin">
+                      <img src="images/eddie.jpeg" alt="Veggie" style="width: 100%">
+                      <h4>EDDIE GRIFFIN</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookEddieGriffin" value="EDDIE GRIFFIN"onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column comedians">
+                  <div class="content" id="daveChappelle">
+                      <img src="images/dave.jpg" alt="Veggie" style="width: 100%">
+                      <h4>DAVE CHAPPELLE</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookDaveChappelle" value="DAVE CHAPPELLE"onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column djs">
+                  <div class="content" id="djKhaled">
+                      <img src="images/djkhaled.jpg" alt="Veggie" style="width: 100%">
+                      <h4>DJ KHALED</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookDjKhaled" value="DJ KHALED" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column djs">
+                  <div class="content" id="feddeLeGrand">
+                      <img src="images/fedde.jpg" alt="Veggie" style="width: 100%">
+                      <h4>FEDDE LE GRAND</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookFeddeLeGrand" value="FEDDE LE GRAND" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column djs">
+                  <div class="content" id ="zedd">
+                      <img src="images/zedd.gif" alt="Veggie" style="width: 100%">
+                      <h4>ZEDD</h4>
+                      <p class="description">10"- KES 1,000 | 14" - KES 1,500 | 18" - KES 2,000</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookZedd" value="ZEDD" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column mcs">
+                  <div class="content" id="chrisRock">
+                      <img src="images/chrisrock.jpg" alt="Veggie" style="width: 100%">
+                      <h4>CHRIS ROCK</h4>
+                      <p class="description">10"- KES 1,200 | 14" - KES 1,700 | 18" - KES 2,400</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookChrisRock" value="CHRIS ROCK" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column mcs">
+                  <div class="content" id="rickyGervais">
+                      <img src="images/ricky.jpeg" alt="Veggie" style="width: 100%">
+                      <h4>RICKY GERVAIS</h4>
+                      <p class="description">10"- KES 1,200 | 14" - KES 1,700 | 18" - KES 2,200</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button"id="bookRickyGervais" value="RICKY GERVAIS" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column mcs">
+                  <div class="content" id="kattWilliams">
+                      <img src="images/kattwilliams.jpeg" alt="Veggie" style="width: 100%">
+                      <h4>KATT WILLIAMS</h4>
+                      <p class="description">10"- KES 1,200 | 14" - KES 1,700 | 18" - KES 2,200</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut magnam adipisci cum
+                          voluptates qui, architecto impedit officia placeat vitae ea totam doloremque odio eius neque ex,
+                          minus dolores voluptatum!</p> <br>
+                      <p><button class="open-button" id="bookKattWilliams" value="KATT WILLIAMS" onclick="openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
     </div>
+
+
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
