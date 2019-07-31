@@ -24,14 +24,14 @@
       <br>
       <br>
 
-      <h3>PROMOTER FORM</h3>
+      <h3>Event FORM</h3>
       <form id ="promoter">
         <label= "start-date">Start Date:</label>
-        <input type="text" name="start-date">
+        <input type="date" name="start-date">
         <br>
         <br>
         <label= "end-date">End Date:</label>
-        <input type="text" name="end-date">
+        <input type="date" name="end-date">
         <br>
         <br>
         <label= "location">Location</label>
@@ -39,23 +39,12 @@
         <br>
         <br>
         <label= "type">Type</label>
-        <input type="text" name="type">
-      </form>
-      <br>
-      <br>
-
-      <h3>ARTIST FORM</h3>
-      <form id ="artist">
-        <label= "stage-name">Stage Name:</label>
-        <input type="text" name="stage-name">
-        <br>
-        <br>
-        <label= "availability">Availability:</label>
-        <input type="text" name="availability">
-        <br>
-        <br>
-        <label= "genre">Genre/Speciality</label>
-        <input type="text" name="genre">
+        <select class="type" name="event-type">
+          <option value="birthday">Concert</option>
+          <option value="birthday">Club event</option>
+          <option value="birthday">Festival</option>
+          <option value="birthday">Private Party</option>
+        </select>
       </form>
       <br>
       <br>
@@ -70,7 +59,7 @@
         <input type="text" name="email">
         <br>
         <br>
-        <label= "street">street/City/Country</label>
+        <label= "street">Street/City/Country:</label>
         <input type="text" name="street">
         <br>
         <br>
@@ -79,4 +68,8 @@
       </form>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </html>
