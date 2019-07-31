@@ -1,6 +1,7 @@
 //Business logic
 //global variable declarations
-
+var contact = ["phone","email","street","city","county"];
+var dateRequested;
 
 <!--Constructors: artist, event, promoter, contact, event-type-->
 <!--Artist-->
@@ -11,12 +12,12 @@ function Artist(name, stageName,rateCard, specialization, availability,) {
 	this.specialization = specialization;
 }
 <!--event-->
-function Event(name, startDate, endDate, Type) {
+function Event(name, startDate, endDate, type) {
 	this.name = name;
 	this.startDate = startDate;
 	this.endDate = endDate;
 	this.type = function Type(concert,club,wedding,graduation,birthday,newYear,){
-		this.converters = concert;
+		this.concert = concert;
 		this.club = club;
 		this.wedding = wedding;
 		this.graduation = graduation;
@@ -33,6 +34,14 @@ function Promoter(name, contact,budget,notes )  {
 }
 
 <!--Methods-->
-<!--Artist availability-->
 
+
+
+function acceptBooking(){}
+<!--Artist availability-->
+Event.prototype.availability = function () {
+	if (dateRequested => this.startDate && dateRequested <= this.endDate) {
+		return true;
+	}
+};
 
