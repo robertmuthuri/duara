@@ -9,6 +9,7 @@
   </head>
   <body>
   <div class= "form-pop-up">
+    <form class ="form-container">
     <h2 class="book drake">Book Drake</h2>
                <h2 class="book edSheeran">Book Ed Sheeran</h2>
                <h2 class="book migos">Book Migos</h2>
@@ -21,7 +22,35 @@
                <h2 class="book chrisRock">Book Chris Rock</h2>
                <h2 class="book rickyGervais">Book Ricky Gervais</h2>
                <h2 class="book kattWilliams">Book Katt Williams</h2>
-    </div>           
+               
+               <label for="start-date">Start Date</label>
+
+               <input class="form-control" type="date" id="start-date">
+
+               <label for="finish-date">Finish date</label>
+
+               <input class="form-control" type="date" id="finish-date">
+
+               <label for="location">Event Location</label>
+
+               <input class="form-control" type="date" id="finish-date">
+
+               <label for="gig-type">Event Type</label>
+
+               <select class="form-control" id="gig-type">
+                   <option value="concert">concert</option>
+                   <option value="private-party">private party</option>
+                   <option value="club-event">club event</option>
+                   <option value="festival">festival</option>
+               </select>
+
+               <button type="button" class="btn" onclick="closeForm(); openCheckOut();">Next
+               </button>
+
+               <button type="button" class="btn cancel" onclick="closeForm()">Back</button>
+           </form>
+      </form>
+    </div>
     <div class="main">
       <div id="myBtnContainer">
              <div class="header">
