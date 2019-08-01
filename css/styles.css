@@ -64,45 +64,23 @@
     transition: all ease .5s;
   }
   
-  #nav.change {
+#nav.change {
     background: red;
     transition: all ease .5s;
   }
- .test{
+.test{
      float: right;
      margin-top: -2.6em;
      margin-right: 1em;
      color: white;
  }
- * {
-    box-sizing: border-box;
-  }
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: grey;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
+input[type=text] {
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
   }
   
-form.example button:hover {
-    background: grey;
+
+input[type=text]:focus {
+    width: -100%;
   }
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
