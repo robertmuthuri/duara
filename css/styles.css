@@ -16,7 +16,11 @@ h4 {
 span {
     font-family: 'Aldrich', sans-serif;
     background-color:yellow;
-    padding:14px;
+    padding:12px;
     color:black;
+    top:0;
     /* width: 180px; */
+}
+#icons {
+    margin-top: 30px;
 }
