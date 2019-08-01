@@ -58,16 +58,16 @@
     display: inline;
     font-family: 'Crimson Pro', serif;
 }
-#nav ul li:link {
-    color:white;
-}
-#nav ul li:visited {
+#nav ul li a:link {
     color: white;
 }
-#nav ul li:hover {
+#nav ul li a:visited {
+    color: white;
+}
+#nav ul li a:hover {
     color: grey;
 }
-#nav ul li:active {
+#nav ul li a:active {
     color: grey;
 } 
 #logo {
@@ -75,6 +75,7 @@
     padding: 20px;
     font-size: 18px;
     transition: all ease .5s;
+    font-family: 'Baloo Chettan', cursive;
 }
   
 #nav.change {
