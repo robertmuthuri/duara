@@ -41,3 +41,78 @@ for (var i = 0; i < btns.length; i++) {
    this.className += " active";
  });
 }
+filterSelector("all")
+function filterSelector(c) {
+ var x, i;
+ x = document.getElementsByClassName("cart");
+ if (c == "all") c = "";
+ for (i = 0; i < x.length; i++) {
+   w3RemoveClass(x[i], "showCart");
+   if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showCart");
+ }
+}
+
+function w3AddClass(element, name) {
+ var i, arr1, arr2;
+ arr1 = element.className.split(" ");
+ arr2 = name.split(" ");
+ for (i = 0; i < arr2.length; i++) {
+   if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+ }
+}
+
+function w3RemoveClass(element, name) {
+ var i, arr1, arr2;
+ arr1 = element.className.split(" ");
+ arr2 = name.split(" ");
+ for (i = 0; i < arr2.length; i++) {
+   while (arr1.indexOf(arr2[i]) > -1) {
+     arr1.splice(arr1.indexOf(arr2[i]), 1);
+   }
+ }
+ element.className = arr1.join(" ");
+}
+function openForm() {
+ document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+ document.getElementById("myForm").style.display = "none";
+}
+function openCheckOut() {
+ document.getElementById("checkout").style.display = "block";
+}
+
+function closeCheckOut() {
+ document.getElementById("checkout").style.display = "none";
+}
+filterSelector("all")
+function filterSelector(c) {
+ var x, i;
+ x = document.getElementsByClassName("book");
+ if (c == "all") c = "";
+ for (i = 0; i < x.length; i++) {
+   w3RemoveClass(x[i], "showCart");
+   if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showBook");
+ }
+}
+
+function w3AddClass(element, name) {
+ var i, arr1, arr2;
+ arr1 = element.className.split(" ");
+ arr2 = name.split(" ");
+ for (i = 0; i < arr2.length; i++) {
+   if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+ }
+}
+
+function w3RemoveClass(element, name) {
+ var i, arr1, arr2;
+ arr1 = element.className.split(" ");
+ arr2 = name.split(" ");
+ for (i = 0; i < arr2.length; i++) {
+   while (arr1.indexOf(arr2[i]) > -1) {
+     arr1.splice(arr1.indexOf(arr2[i]), 1);
+   }
+ }
+ element.className = arr1.join(" ");
+}

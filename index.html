@@ -8,7 +8,7 @@
 
   </head>
   <body>
-  <div class= "form-pop-up">
+  <div class= "form-popup" id="myForm">
     <form class ="form-container">
     <h2 class="book drake">Book Drake</h2>
                <h2 class="book edSheeran">Book Ed Sheeran</h2>
@@ -22,14 +22,10 @@
                <h2 class="book chrisRock">Book Chris Rock</h2>
                <h2 class="book rickyGervais">Book Ricky Gervais</h2>
                <h2 class="book kattWilliams">Book Katt Williams</h2>
-               
-               <label for="start-date">Start Date</label>
 
-               <input class="form-control" type="date" id="start-date">
+               <label for="date">Date</label>
 
-               <label for="finish-date">Finish date</label>
-
-               <input class="form-control" type="date" id="finish-date">
+               <input class="form-control" type="date" id="date">
 
                <label for="location">Event Location</label>
 
@@ -74,7 +70,7 @@
                          record producer,actor, and entrepreneur. As an entrepreneur, Drake has founded the OVO Sound record
                          label with longtime collaborator 40. Drake released his debut studio album Thank Me Later in 2010,
                           which debuted at number one on the US Billboard 200 and was soon certified platinum</p> <br>
-                      <p><button class="open-button" id="bookDrake" value="DRAKE" onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookDrake" value="DRAKE" onclick="filterSelector('drake')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column musicians">
@@ -86,7 +82,7 @@
                          guitarist, record producer, and actor. After signing with Asylum Records, his debut album,
                           + ("plus"), was released in September 2011. It topped the UK and Australian charts,
                           reached number five in the US, and has since been certified seven-times platinum in the UK.</p> <br>
-                      <p><button class="open-button" id="bookEdSheeran" value="ED-SHEERAN" onclick="openForm();">VIEW PROFILE</button>
+                      <p><button class="open-button" id="bookEdSheeran" value="ED-SHEERAN" onclick="filterSelector('edSheeran')openForm();">VIEW PROFILE</button>
                       </p>
                   </div>
               </div>
@@ -99,7 +95,7 @@
                          They are composed of three rappers known by their stage names Takeoff, Offset and Quavo.
                          They have gone on to release several more singles,
                          including their four Billboard Hot 100 top 10 entries "Bad and Boujee" (featuring Lil Uzi Vert) (2016), peaking at number one</p> <br>
-                      <p><button class="open-button" id="bookMigos" value="MIGOS" onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookMigos" value="MIGOS" onclick="filterSelector('migos')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column comedians">
@@ -111,7 +107,7 @@
                          actor, and producer. Born and raised in Philadelphia, Pennsylvania, Hart began his
                         career by winning several amateur comedy competitions at clubs throughout New England.
                         Hart's comedic reputation continued to grow with the release of his first stand-up album, I'm a Grown Little Man</p><br>
-                      <p><button class="open-button" id="bookKevinHart" value="KEVIN HART" onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookKevinHart" value="KEVIN HART" onclick="filterSelector('kevinHart')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column comedians">
@@ -123,7 +119,7 @@
                          He is best known for portraying Eddie Sherman on the sitcom Malcolm & Eddie. Griffin enrolled
                          as a biological engineering major at Kansas State University, but later left in 1988 and
                          moved to New York City to pursue a career in comedy.</p> <br>
-                      <p><button class="open-button" id="bookEddieGriffin" value="EDDIE GRIFFIN"onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookEddieGriffin" value="EDDIE GRIFFIN"onclick="filterSelector('eddie')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column comedians">
@@ -135,7 +131,7 @@
                          comedian, actor, writer, and producer. Chappelle is the recipient of numerous accolades,
                          including two Emmy Awards and two Grammy Awards. He is most known for his iconic and acclaimed
                           satirical comedy sketch series Chappelle's Show</p> <br>
-                      <p><button class="open-button" id="bookDaveChappelle" value="DAVE CHAPPELLE"onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookDaveChappelle" value="DAVE CHAPPELLE"onclick="filterSelector('daveChapelle')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column djs">
@@ -145,7 +141,7 @@
                       <p class="description">Musician: WE THE BEST MUSIC; ROC NATION.</p>
                       <p>Khaled Mohamed Khaled (born November 26, 1975),[1] better known as DJ Khaled, is an American DJ,
                          record executive, songwriter, record producer and media personality.</p> <br>
-                      <p><button class="open-button" id="bookDjKhaled" value="DJ KHALED" onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookDjKhaled" value="DJ KHALED" onclick="filterSelector('djKhaled')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column djs">
@@ -156,19 +152,19 @@
                       <p>Fedde Le Grand (born 7 September 1977) is a Dutch house DJ, record producer and remixer from Utrecht.
                         In 2006 his single "Put Your Hands Up For Detroit"  reached the top five on the Dutch Top 40, number one
                         in the United Kingdom and spent five weeks on the dance charts in Spain</p> <br>
-                      <p><button class="open-button" id="bookFeddeLeGrand" value="FEDDE LE GRAND" onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookFeddeLeGrand" value="FEDDE LE GRAND" onclick="filterSelector('feddeLeGrand')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column djs">
                   <div class="content" id ="zedd">
-                      <img src="images/zedd.gif" alt="Veggie" style="width: 100%">
+                      <img src="images/zedd.gif" alt="zedd" style="width: 100%">
                       <h4>ZEDD</h4>
                       <p class="description">Musician: INTERSCOPE, OWSLA;</p>
                       <p>Anton Zaslavski was born 2 September  in the year 1989. He is known professionally as Zedd,
                          is a Russian-German record producer, DJ, singer and songwriter. He primarily produces and performs
                          electro house music, but has diversified his genre and musical style, drawing influences from
                          progressive house, dubstep, and classical music.</p> <br>
-                      <p><button class="open-button" id="bookZedd" value="ZEDD" onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button" id="bookZedd" value="ZEDD" onclick="filterSelector('zedd')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column mcs">
@@ -184,13 +180,13 @@
               </div>
               <div class="column mcs">
                   <div class="content" id="rickyGervais">
-                      <img src="images/ricky.jpeg" alt="Veggie" style="width: 100%">
+                      <img src="images/ricky.jpeg" alt="ricky" style="width: 100%">
                       <h4>RICKY GERVAIS</h4>
                       <p class="description">COMEDIAN</p>
                       <p>Christopher Julius Rock (born February 7, 1965) is an American comedian, actor, writer, producer, and director.
                         After working as a stand-up comedian and appearing in supporting film roles, Rock came to wider
                          prominence as a cast member of Saturday Night Live in the early 1990s. He went on to more prominent film appearances</p><br>
-                      <p><button class="open-button"id="bookRickyGervais" value="RICKY GERVAIS" onclick="openForm();">VIEW PROFILE</button></p>
+                      <p><button class="open-button"id="bookRickyGervais" value="RICKY GERVAIS" onclick="filterSelector('rickGervais')openForm();">VIEW PROFILE</button></p>
                   </div>
               </div>
               <div class="column mcs">
