@@ -3,7 +3,7 @@
 }
 
 h4 {
-    color:white;
+    color:gray;
     font-family: 'ABeeZee', sans-serif;
     bottom: 0;
     margin-top: 20px;
@@ -18,4 +18,5 @@ span {
     background-color:yellow;
     padding:14px;
     color:black;
+    /* width: 180px; */
 }
