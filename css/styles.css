@@ -45,12 +45,12 @@ span {
 .logo {
     width:60px;
 }
-#logo {
-    
-    font-size: 30px;
+/* #logo>span{
+    font-size: 20px;
+    background-color:none;
     color:red;
     font-family: 'Fira Code', monospace;
-}
+} */
 
 #slider {
     overflow: hidden;
