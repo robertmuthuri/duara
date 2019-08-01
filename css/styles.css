@@ -1,7 +1,4 @@
 
-* {
-    background-color: black;
-}
 
 h4 {
     /* color:gray;
@@ -38,12 +35,18 @@ span {
     top:0;
     /* width: 180px; */
 }
-#icons {
-    margin-top: 30px;
+
+#lowerbar {
+    background-color: #000000d4;
+    position:fixed;
+    padding-top:10px;
+    padding-bottom:10px;
 }
+
 #slider {
     overflow: hidden;
     width: 100%;
+    margin-bottom:-25%;
 }
 #slider figure {
     position: relative;
@@ -51,10 +54,13 @@ span {
     margin: 0%;
     left: 0%;
     animation: 20s slider infinite;
+    
+
 }
 #slider figure img {
     width: 20%;
     float: left;
+
 }
 @keyframes slider {
     0% {
@@ -100,6 +106,7 @@ span {
     padding-left: 30px;
     display: inline;
     font-family: 'Crimson Pro', serif;
+    decoration:none;
 }
 #nav ul li:link {
     color:white;
