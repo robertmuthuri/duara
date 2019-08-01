@@ -56,19 +56,32 @@
 #nav ul li {
     padding-left: 30px;
     display: inline;
+    font-family: 'Crimson Pro', serif;
 }
-  #logo {
+#nav ul li:link {
+    color:white;
+}
+#nav ul li:visited {
+    color: white;
+}
+#nav ul li:hover {
+    color: grey;
+}
+#nav ul li:active {
+    color: grey;
+} 
+#logo {
     color:white;
     padding: 20px;
     font-size: 18px;
     transition: all ease .5s;
-  }
+}
   
 #nav.change {
     background: red;
     transition: all ease .5s;
-  }
-.test{
+}
+.links {
      float: right;
      margin-top: -2.6em;
      margin-right: 1em;
