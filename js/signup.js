@@ -18,6 +18,7 @@ $(document).ready(function(){
     var bDay=$("input#birthday").val();
 
     var newArtist= new artist(aName, pWord, cPWord, mail, gender, bDay);
+
     if($("#password").val() !== $("#confirm-password").val()){
       alert("passwords dont match!!");
     }
