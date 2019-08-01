@@ -1,3 +1,46 @@
+
+* {
+    background-color: black;
+}
+
+h4 {
+    /* color:gray;
+    font-family: 'ABeeZee', sans-serif;
+    bottom: 0;
+    
+    border: 1px solid gray;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:5px;
+    display: justify; */
+    color: grey;
+    margin-left: 2px;
+    font-family: Aldrich, sans-serif;
+    align-content: center;
+    border: 1px solid grey;
+    border-image: initial;
+    padding: 15px;
+    margin-top: 20px;
+}
+h4 a {
+    color: gray;
+    text-decoration: none;
+}
+h4 a:hover{
+    text-decoration:none;
+    color: yellow;
+}
+span {
+    font-family: 'Aldrich', sans-serif;
+    background-color:yellow;
+    padding:12px;
+    color:black;
+    top:0;
+    /* width: 180px; */
+}
+#icons {
+    margin-top: 30px;
+}
 #slider {
     overflow: hidden;
     width: 100%;
