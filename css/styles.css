@@ -1,0 +1,99 @@
+#slider {
+    overflow: hidden;
+    width: 100%;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0%;
+    left: 0%;
+    animation: 20s slider infinite;
+}
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    20% {
+       left: 0%;
+   }
+   25% {
+       left: -100%;
+   }
+   45% {
+       left: -100%;
+   }
+   50% {
+       left: -200%;
+   }
+   70% {
+       left: -200%;
+   }
+   75% {
+       left: -300%;
+   }
+   90% {
+       left: -300%;
+   }
+   100% {
+       left: -400%;
+   }
+}  
+#nav {
+    height: 70px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+}
+#nav ul {
+    list-style: none;
+}  
+#nav ul li {
+    padding-left: 30px;
+    display: inline;
+    font-family: 'Crimson Pro', serif;
+}
+#nav ul li:link {
+    color:white;
+}
+#nav ul li:visited {
+    color: white;
+}
+#nav ul li:hover {
+    color: grey;
+}
+#nav ul li:active {
+    color: grey;
+} 
+#logo {
+    color:white;
+    padding: 20px;
+    font-size: 18px;
+    transition: all ease .5s;
+}
+  
+#nav.change {
+    background: red;
+    transition: all ease .5s;
+}
+.links {
+     float: right;
+     margin-top: -2.6em;
+     margin-right: 1em;
+     color: white;
+ }
+input[type=text] {
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+
+input[type=text]:focus {
+    width: -100%;
+  }
