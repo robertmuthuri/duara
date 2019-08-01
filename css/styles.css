@@ -42,6 +42,15 @@ span {
     padding-top:10px;
     padding-bottom:10px;
 }
+.logo {
+    width:60px;
+}
+#logo {
+    
+    font-size: 30px;
+    color:red;
+    font-family: 'Fira Code', monospace;
+}
 
 #slider {
     overflow: hidden;
@@ -92,7 +101,7 @@ span {
    }
 }  
 #nav {
-    height: 70px;
+    height: 90px;
     background: black;
     position: fixed;
     width: 100%;
@@ -101,23 +110,25 @@ span {
 }
 #nav ul {
     list-style: none;
-}  
+}   
 #nav ul li {
     padding-left: 30px;
     display: inline;
     font-family: 'Crimson Pro', serif;
-    decoration:none;
+    text-decoration: none;
 }
-#nav ul li:link {
+#nav ul li a:link{
     color:white;
+    text-decoration: none;
+
 }
-#nav ul li:visited {
+#nav ul li a:visited {
     color: white;
 }
-#nav ul li:hover {
+#nav ul li a:hover {
     color: grey;
 }
-#nav ul li:active {
+#nav ul li a:active {
     color: grey;
 } 
 #logo {
