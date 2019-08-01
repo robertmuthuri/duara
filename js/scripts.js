@@ -91,7 +91,7 @@ function filterSelector(c) {
  x = document.getElementsByClassName("book");
  if (c == "all") c = "";
  for (i = 0; i < x.length; i++) {
-   w3RemoveClass(x[i], "showCart");
+   w3RemoveClass(x[i], "showBook");
    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showBook");
  }
 }

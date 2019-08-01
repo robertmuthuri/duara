@@ -265,10 +265,11 @@ body {
  .form-container .btn:hover, .open-button:hover {
     opacity: 1;
  }
- .showBook{
-    display: inline-block;
- }
+
  .book{
     display: none;
     font-size: 3vw;
+ }
+ .showBook{
+    display: inline-block;
  }
