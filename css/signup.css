@@ -1,0 +1,19 @@
+.sign-up{
+  border: 2px solid red;
+  max-width: 500px;
+  padding: 2rem;
+  margin: 2rem auto;
+
+}
+.sign-up label{
+  display: block;
+}
+.sign-up input{
+  width: 50%;
+}
+#btn{
+  cursor: pointer;
+}
+.card{
+padding-top: 5%;
+}
