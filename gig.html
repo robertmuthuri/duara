@@ -8,14 +8,10 @@
   </head>
   <body>
     <form id="gig">
+      <h3>Booking Form</h3>
       <div class="form-group">
-        <label for="start-date">start Date</label>
-        <input class="form-control" type="date" id="start-date">
-      </div>
-      <br>
-      <div class="form-group">
-        <label for="finish-date">finish-date</label>
-        <input class="form-control" type="date"  id="finish-date">
+        <label for="gig-date">event Date</label>
+        <input class="form-control" type="date" id="gig-date">
       </div>
       <br>
       <div class="form-group">
@@ -33,6 +29,43 @@
         <input class="form-control" type="text"  id="location">
       </div>
       <br>
+      <h3>PROMOTER DETAILS</h3>
+      <br>
+      <div class="form-group">
+        <label for="name">Promoter Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name....">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="mail">Promoter Email</label>
+        <input type="email" class="form-control" id="mail" placeholder="Email....">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="phone-number">phone no:</label>
+        <input type="number" class="form-control" id="phone-number" placeholder="+254....">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="budget">overall budget</label>
+        <input type="number" class="form-control" id="budget" placeholder="ksh...">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="aob">aditional information</label>
+        <input type="textarea" class="form-control" id="aob" placeholder="additional Information...." style="row:5">
+      </div>
+      <br>
       <button type="submit" class="btn">submit</button>
+    </form>
+    <div class="bookings">
+      <div class="card border-success">
+        <div class="card-body">
+          <ul id="bookings">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
