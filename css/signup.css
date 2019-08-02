@@ -1,0 +1,25 @@
+.sign-up{
+  border: 2px solid red;
+  max-width: 500px;
+  padding: 2rem;
+  margin: 2rem auto;
+
+}
+.sign-up label{
+  display: block;
+}
+.sign-up input{
+  width: 50%;
+}
+#btn{
+  cursor: pointer;
+}
+.card{
+padding-top: 5%;
+}
+body{
+  background-im: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url("https://diymusician.cdbaby.com/wp-content/uploads/2016/03/concert-crowd-at-live-music-festival-m.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

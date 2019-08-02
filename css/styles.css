@@ -1,0 +1,373 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: black;
+   padding: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+   overflow: hidden;
+   background-color: black;
+   padding: 20px 10px;
+ }
+ .header button {
+   float: left;
+   color: black;
+   text-align: center;
+   padding: 12px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 25px;
+   border-radius: 4px;
+ }
+ .header button.logo {
+   font-size: 25px;
+   font-weight: bold;
+ }
+ .header-right {
+   float: right;
+ }
+ @media screen and (max-width: 500px) {
+   .header button {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+
+   .header-right {
+     float: none;
+   }
+ }
+@media screen and (max-width: 500px) {
+   .header button {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+
+   .header-right {
+     float: none;
+   }
+ }
+ .main {
+    max-width: 1000px;
+    margin: auto;
+ }
+
+ h1 {
+    font-size: 6vw;
+    word-break: break-all;
+ }
+ h2{
+    font-size: 4vw;
+ }
+ p {
+    position: inline;
+ }
+ .row {
+    margin: 10px -16px;
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+ }
+
+
+ /*Add padding between each column*/
+ .row,
+ .row>.col-md-4 {
+    padding: 8px;
+ }
+
+ /*create three equal columns that float next to each other*/
+ .column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /*Hide all the elements by default*/
+    -ms-flex: 33.33%;
+    /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+
+ }
+
+
+ .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+ }
+ img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        width: 50%;
+    }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+
+ }
+
+
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ /*Content*/
+ .content {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+ }
+
+ /*The show class is added to the filtered elements*/
+ .show {
+    display: block;
+ }
+
+ /*Style for the buttons*/
+
+ .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: red;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-bottom: 4px;
+
+ }
+
+ .btn:hover {
+    background-color: #ddd;
+ }
+
+ .btn.active {
+    background-color: #666;
+    color: white;
+ }
+ /*Button that pops up the buying form*/
+ .open-button {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    position: relative;
+    bottom: 23px;
+    float: right;
+    width: 200px;
+    border-radius: 10px;
+ }
+ .description{
+   color: red;
+}
+
+* {
+    background-color: black;
+}
+
+h4 {
+    /* color:gray;
+    font-family: 'ABeeZee', sans-serif;
+    bottom: 0;
+    
+    border: 1px solid gray;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:5px;
+    display: justify; */
+    color: grey;
+    margin-left: 2px;
+    font-family: Aldrich, sans-serif;
+    align-content: center;
+    border: 1px solid grey;
+    border-image: initial;
+    padding: 15px;
+    margin-top: 40px;
+}
+h4 a {
+    color: gray;
+    text-decoration: none;
+}
+h4 a:hover{
+    text-decoration:none;
+    color: yellow;
+}
+span {
+    font-family: 'Aldrich', sans-serif;
+    background-color:yellow;
+    padding:12px;
+    color:black;
+    top:0;
+    /* width: 180px; */
+}
+
+#lowerbar {
+    background-color: #000000d4;
+    position:fixed;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.logo {
+    width:60px;
+}
+
+
+#slider {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom:-25%;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0%;
+    left: 0%;
+    animation: 20s slider infinite;
+    
+
+}
+#slider figure img {
+    width: 20%;
+    float: left;
+
+}
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    20% {
+       left: 0%;
+   }
+   25% {
+       left: -100%;
+   }
+   45% {
+       left: -100%;
+   }
+   50% {
+       left: -200%;
+   }
+   70% {
+       left: -200%;
+   }
+   75% {
+       left: -300%;
+   }
+   90% {
+       left: -300%;
+   }
+   100% {
+       left: -400%;
+   }
+}  
+#nav {
+    height: 90px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+}
+#nav ul {
+    list-style: none;
+}   
+#nav ul li {
+    padding-left: 30px;
+    display: inline;
+    font-family: 'Crimson Pro', serif;
+    text-decoration: none;
+}
+#nav ul li a:link{
+    color:white;
+    text-decoration: none;
+
+}
+#nav ul li a:visited {
+    color: white;
+}
+#nav ul li a:hover {
+    color: grey;
+}
+#nav ul li a:active {
+    color: grey;
+} 
+#logo {
+    color:rgb(190, 5, 5);
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Aldrich', sans-serif;
+}
+  
+#nav.change {
+    background: red;
+    transition: all ease .5s;
+}
+.links {
+     float: right;
+     margin-top: -2.6em;
+     margin-right: 1em;
+     color: white;
+ }
+input[type=text] {
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+
+input[type=text]:focus {
+    width: -100%;
+  }
+
+#artist-pg  {
+    background-color:black;
+}

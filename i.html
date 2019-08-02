@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/styles.css" rel="stylesheet" type ="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type ="text/css">
+  </head>
+  <body>
+    <button type="button" name="login"><a href ="login.html">LOGIN</a></button>
+    <button type="button" name="signup"><a href ="signup.html">SIGNUP</a></button>
+    <h3>PROMOTER FORM</h3>
+    <form id ="promoter">
+      <label= "promoter-name">Promoter Name:</label>
+      <input type="text" name="promoter-name">
+      <br>
+      <br>
+      <label= "budget">Budget:&nbsp&nbsp&nbsp&nbsp</label>
+      <input type="text" name="budget">
+      <br>
+      <br>
+      <label= "rates">Rates:&nbsp&nbsp&nbsp&nbsp</label>
+      <input type="text" name="rates">
+    </form>
+    <br>
+    <br>
+
+    <h3>EVENT FORM</h3>
+    <form id ="promoter">
+      <label= "start-date">Start Date:</label>
+      <input type="date" name="start-date">
+      <br>
+      <br>
+      <label= "end-date">End Date:</label>
+      <input type="date" name="end-date">
+      <br>
+      <br>
+      <label= "location">Location</label>
+      <input type="text" name="location">
+      <br>
+      <br>
+      <label= "type">Type</label>
+      <select class="type" name="event-type">
+        <option value="birthday">Concert</option>
+        <option value="birthday">Club event</option>
+        <option value="birthday">Festival</option>
+        <option value="birthday">Private Party</option>
+      </select>
+    </form>
+    <br>
+    <br>
+
+    <h3>CONTACT FORM</h3>
+    <form id ="contacts">
+      <label= "phone">Phone:</label>
+      <input type="text" name="phone">
+      <br>
+      <br>
+      <label= "email">Email:</label>
+      <input type="text" name="email">
+      <br>
+      <br>
+      <label= "street">Street/City/Country:</label>
+      <input type="text" name="street">
+      <br>
+      <br>
+      <label= "address">Address</label>
+      <input type="text" name="address">
+    </form>
+  </div>
+  </body>
+</html>
+// class User{
+//    constructor( username, email, password ){
+//        this.username = username;
+//        this.email = email;
+//        this.password = password;
+//    }
+// };
+//
+//
+// function Signup_form(){
+//    let sign_up_form = `
+//        <form  onsubmit="event.preventDefault(); axeit();" id='usf'>
+//            <label for="full_name">Full Name</label>
+//            <input name="full_name" type="text" id="f_name">
+//            <br>
+//            <label for="email">Email</label>
+//            <input type="email" name="email" id="mail">
+//            <br>
+//            <label for="password">Password</label>
+//            <input type="password" name="password" id="pass">
+//            <br>
+//            <label for="con_pass">confirm password</label>
+//            <input type="password" name="con_pass" id="c_pass">
+//            <br>
+//            <button onclick="">Sign up</button>
+//        </form>
+//    `;
+//    let app = document.getElementById('sur');
+//    app.parentNode.removeChild(app);
+//    $('#s_f').append(sign_up_form);
+// };
+//
+// let users_list = [];
+//
+// function axeit(){
+//    let full_name = $( '#f_name' ).val();
+//    let email = $( '#mail' ).val();
+//    let password = $( '#pass' ).val();
+//    let confirm_pass = $( '#c_pass' ).val();
+//
+//    // create a user instance;
+//    let new_user = new User( full_name, email, password );
+//    users_list.push(new_user);
+//    let app = document.getElementById('usf');
+//    app.parentNode.removeChild(app);
+//    console.log(users_list)
+//    $('body').prepend(`<button id="sur" onclick="Signup_form()">Make An Account  </button>`)
+//    sessionStorage.clear();
+//    sessionStorage.setItem('users',JSON.stringify(users_list));
+//    console.log( showresults())
+// };
+//
+// function showresults(){
+//    var results = JSON.parse(sessionStorage.users);
+//    console.log('results', results);
+//    results.forEach((item,index,array)=>{
+//        let itemed = `user ${item.username} has email ${item.email}`
+//        $('#data').append(itemed);
+//    })
+// };
