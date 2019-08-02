@@ -45,12 +45,7 @@ span {
 .logo {
     width:60px;
 }
-/* #logo>span{
-    font-size: 20px;
-    background-color:none;
-    color:red;
-    font-family: 'Fira Code', monospace;
-} */
+
 
 #slider {
     overflow: hidden;
@@ -132,10 +127,10 @@ span {
     color: grey;
 } 
 #logo {
-    color:white;
+    color:rgb(190, 5, 5);
     padding: 20px;
-    font-size: 18px;
-    transition: all ease .5s;
+    font-size: 30px;
+    font-family: 'Aldrich', sans-serif;
 }
   
 #nav.change {
@@ -158,3 +153,7 @@ input[type=text] {
 input[type=text]:focus {
     width: -100%;
   }
+
+#artist-pg  {
+    background-color:black;
+}
