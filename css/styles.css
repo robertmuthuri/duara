@@ -219,7 +219,7 @@ h4 {
     /* color:gray;
     font-family: 'ABeeZee', sans-serif;
     bottom: 0;
-    
+
     border: 1px solid gray;
     padding-top:10px;
     padding-bottom:10px;
@@ -296,7 +296,7 @@ span {
    100% {
        left: -400%;
    }
-}  
+}
 #nav {
     height: 70px;
     background: black;
@@ -307,7 +307,7 @@ span {
 }
 #nav ul {
     list-style: none;
-}  
+}
 #nav ul li {
     padding-left: 30px;
     display: inline;
@@ -324,14 +324,14 @@ span {
 }
 #nav ul li:active {
     color: grey;
-} 
+}
 #logo {
     color:white;
     padding: 20px;
     font-size: 18px;
     transition: all ease .5s;
 }
-  
+
 #nav.change {
     background: red;
     transition: all ease .5s;
@@ -413,7 +413,7 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
   }
-  
+
 
 input[type=text]:focus {
     width: -100%;

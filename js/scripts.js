@@ -180,7 +180,7 @@ BookingOrder.prototype.calculateFinalPrice = function () {
 //Interface logic
 $(function () {
  var myBooking = new BookingOrder();
-	
+
  $("form#")
 });
 
