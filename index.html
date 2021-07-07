@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DUARA</title>
+      <link href="css/bootstrap.css" rel="stylesheet" type ="text/css">
+    <link href="css/styles.css" rel="stylesheet" type ="text/css">
+
+  </head>
+  <body>
+  <div class= "form-popup" id="myForm">
+    <form class ="form-container">
+    <h2 class="book drake">Book Drake</h2>
+               <h2 class="book edSheeran">Book Ed Sheeran</h2>
+               <h2 class="book migos">Book Migos</h2>
+               <h2 class="book kevinHart">Book Kevin Hart</h2>
+               <h2 class="book eddieGriffin">Book Eddie Griffin</h2>
+               <h2 class="book daveChapelle">Book Dave Chappelle</h2>
+               <h2 class="book djKhaled">Book Dj Khaled</h2>
+               <h2 class="book feddeLeGrand">Book Fedde Le Grand</h2>
+               <h2 class="book zedd">Book Zedd</h2>
+               <h2 class="book chrisRock">Book Chris Rock</h2>
+               <h2 class="book rickyGervais">Book Ricky Gervais</h2>
+               <h2 class="book kattWilliams">Book Katt Williams</h2>
+
+               <label for="date">Date</label>
+
+               <input class="form-control" type="date" id="date">
+
+               <label for="location">Event Location</label>
+
+               <input class="form-control" type="date" id="finish-date">
+
+               <label for="gig-type">Event Type</label>
+
+               <select class="form-control" id="gig-type">
+                   <option value="concert">concert</option>
+                   <option value="private-party">private party</option>
+                   <option value="club-event">club event</option>
+                   <option value="festival">festival</option>
+               </select>
+
+               <button type="button" class="btn" onclick="closeForm(); openCheckOut();">Next
+               </button>
+
+               <button type="button" class="btn cancel" onclick="closeForm()">Back</button>
+           </form>
+      </form>
+    </div>
+    <div class="main">
+      <div id="myBtnContainer">
+             <div class="header">
+                 <button class="btn active logo" onclick="filterSelection('all')">All Artists </button>
+                 <div class="header-right">
+                     <button class="btn" onclick="filterSelection('musicians')">Musicians</button>
+                     <button class="btn" onclick="filterSelection('comedians')">Comedians</button>
+                     <button class="btn" onclick="filterSelection('djs')">DJs</button>
+                     <button class="btn" onclick="filterSelection('mcs')">MCs</button>
+                 </div>
+             </div>
+
+      </div>
+      <div class="row">
+              <div class="column musicians">
+                  <div class="content" id="drake">
+                      <img src="images/drake.jpg" alt="drake" style="width: 100%">
+                      <h4>DRAKE</h4>
+                      <p class="description">Musician: OVO SOUND</p>
+                      <p>Aubrey Drake Graham was born October 24 in the year 1986. He  is a Canadian rapper, singer, songwriter,
+                         record producer,actor, and entrepreneur. As an entrepreneur, Drake has founded the OVO Sound record
+                         label with longtime collaborator 40. Drake released his debut studio album Thank Me Later in 2010,
+                          which debuted at number one on the US Billboard 200 and was soon certified platinum</p> <br>
+                      <p><button class="open-button" id="bookDrake" value="DRAKE" onclick="filterSelector('drake'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column musicians">
+                  <div class="content" id="edSheeran">
+                      <img src="images/edsheeran.jpeg" alt="edsheeran" style="width: 100%">
+                      <h4>ED SHEERAN</h4>
+                      <p class="description">Musician: ASYLUM RECORDS</p>
+                      <p>Edward Christopher Sheeran, was born 17 February in the year 1991. He is an English singer, songwriter,
+                         guitarist, record producer, and actor. After signing with Asylum Records, his debut album,
+                          + ("plus"), was released in September 2011. It topped the UK and Australian charts,
+                          reached number five in the US, and has since been certified seven-times platinum in the UK.</p> <br>
+                      <p><button class="open-button" id="bookEdSheeran" value="ED-SHEERAN" onclick="filterSelector('edSheeran'); openForm();">VIEW PROFILE</button>
+                      </p>
+                  </div>
+              </div>
+              <div class="column musicians">
+                  <div class="content" id="migos">
+                      <img src="images/migos.jpg" alt="migos" style="width: 100%">
+                      <h4>MIGOS</h4>
+                      <p class="description">Musician: QUALITY CONTROL</p>
+                      <p>Migos  is an American hip hop group from Lawrenceville, Georgia, founded in 2008.
+                         They are composed of three rappers known by their stage names Takeoff, Offset and Quavo.
+                         They have gone on to release several more singles,
+                         including their four Billboard Hot 100 top 10 entries "Bad and Boujee" (featuring Lil Uzi Vert) (2016), peaking at number one</p> <br>
+                      <p><button class="open-button" id="bookMigos" value="MIGOS" onclick="filterSelector('migos'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column comedians">
+                  <div class="content" id="kevinHart">
+                      <img src="images/kevin.jpeg" alt="kevin Hart" style="width: 100%">
+                      <h4>KEVIN HART</h4>
+                      <p class="description">COMEDIAN</p>
+                      <p>Kevin Darnell Hart[1] (born July 6, 1979)[2] is an American stand-up comedian,
+                         actor, and producer. Born and raised in Philadelphia, Pennsylvania, Hart began his
+                        career by winning several amateur comedy competitions at clubs throughout New England.
+                        Hart's comedic reputation continued to grow with the release of his first stand-up album, I'm a Grown Little Man</p><br>
+                      <p><button class="open-button" id="bookKevinHart" value="KEVIN HART" onclick="filterSelector('kevinHart'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column comedians">
+                  <div class="content" id="eddieGriffin">
+                      <img src="images/eddie.jpeg" alt="eddie" style="width: 100%">
+                      <h4>EDDIE GRIFFIN</h4>
+                      <p class="description">COMEDIAN</p>
+                      <p>Edward Griffin (born July 15, 1968) is an American comedian and actor.
+                         He is best known for portraying Eddie Sherman on the sitcom Malcolm & Eddie. Griffin enrolled
+                         as a biological engineering major at Kansas State University, but later left in 1988 and
+                         moved to New York City to pursue a career in comedy.</p> <br>
+                      <p><button class="open-button" id="bookEddieGriffin" value="EDDIE GRIFFIN"onclick="filterSelector('eddie'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column comedians">
+                  <div class="content" id="daveChappelle">
+                      <img src="images/dave.jpg" alt="Chapelle" style="width: 100%">
+                      <h4>DAVE CHAPPELLE</h4>
+                      <p class="description">COMEDIAN</p>
+                      <p>David Khari Webber Chappelle was born August 24, in the year 1973. He is an American stand-up
+                         comedian, actor, writer, and producer. Chappelle is the recipient of numerous accolades,
+                         including two Emmy Awards and two Grammy Awards. He is most known for his iconic and acclaimed
+                          satirical comedy sketch series Chappelle's Show</p> <br>
+                      <p><button class="open-button" id="bookDaveChappelle" value="DAVE CHAPPELLE"onclick="filterSelector('daveChapelle'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column djs">
+                  <div class="content" id="djKhaled">
+                      <img src="images/djkhaled.jpg" alt="djkhaled" style="width: 100%">
+                      <h4>DJ KHALED</h4>
+                      <p class="description">Musician: WE THE BEST MUSIC; ROC NATION.</p>
+                      <p>Khaled Mohamed Khaled (born November 26, 1975),[1] better known as DJ Khaled, is an American DJ,
+                         record executive, songwriter, record producer and media personality.</p> <br>
+                      <p><button class="open-button" id="bookDjKhaled" value="DJ KHALED" onclick="filterSelector('djKhaled'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column djs">
+                  <div class="content" id="feddeLeGrand">
+                      <img src="images/fedde.jpg" alt="fedde" style="width: 100%">
+                      <h4>FEDDE LE GRAND</h4>
+                      <p class="description">Musician: MINISTRY OF SOUND AUSTRALIA</p>
+                      <p>Fedde Le Grand (born 7 September 1977) is a Dutch house DJ, record producer and remixer from Utrecht.
+                        In 2006 his single "Put Your Hands Up For Detroit"  reached the top five on the Dutch Top 40, number one
+                        in the United Kingdom and spent five weeks on the dance charts in Spain</p> <br>
+                      <p><button class="open-button" id="bookFeddeLeGrand" value="FEDDE LE GRAND" onclick="filterSelector('feddeLeGrand'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column djs">
+                  <div class="content" id ="zedd">
+                      <img src="images/zedd.gif" alt="zedd" style="width: 100%">
+                      <h4>ZEDD</h4>
+                      <p class="description">Musician: INTERSCOPE, OWSLA;</p>
+                      <p>Anton Zaslavski was born 2 September  in the year 1989. He is known professionally as Zedd,
+                         is a Russian-German record producer, DJ, singer and songwriter. He primarily produces and performs
+                         electro house music, but has diversified his genre and musical style, drawing influences from
+                         progressive house, dubstep, and classical music.</p> <br>
+                      <p><button class="open-button" id="bookZedd" value="ZEDD" onclick="filterSelector('zedd'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column mcs">
+                  <div class="content" id="chrisRock">
+                      <img src="images/chrisrock.jpg" alt="ChrisRock" style="width: 100%">
+                      <h4>CHRIS ROCK</h4>
+                      <p class="description">COMEDIAN</p>
+                      <p>Christopher Julius Rock (born February 7, 1965) is an American comedian, actor, writer, producer, and director.
+                        After working as a stand-up comedian and appearing in supporting film roles, Rock came to wider
+                         prominence as a cast member of Saturday Night Live in the early 1990s. He went on to more prominent film appearances</p> <br>
+                      <p><button class="open-button" id="bookChrisRock" value="CHRIS ROCK" onclick="filterSelector('chrisRock');openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column mcs">
+                  <div class="content" id="rickyGervais">
+                      <img src="images/ricky.jpeg" alt="ricky" style="width: 100%">
+                      <h4>RICKY GERVAIS</h4>
+                      <p class="description">COMEDIAN</p>
+                      <p>Christopher Julius Rock (born February 7, 1965) is an American comedian, actor, writer, producer, and director.
+                        After working as a stand-up comedian and appearing in supporting film roles, Rock came to wider
+                         prominence as a cast member of Saturday Night Live in the early 1990s. He went on to more prominent film appearances</p><br>
+                      <p><button class="open-button"id="bookRickyGervais" value="RICKY GERVAIS" onclick="filterSelector('rickGervais'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+              <div class="column mcs">
+                  <div class="content" id="kattWilliams">
+                      <img src="images/kattwilliams.jpeg" alt="Veggie" style="width: 100%">
+                      <h4>KATT WILLIAMS</h4>
+                      <p class="description">COMEDIAN</p>
+                      <p>Micah Sierra "Katt" Williams was born September 2, in the year 1971. He is an American
+                         stand-up comedian, actor, rapper,singer, and voice actor. </p> <br>
+                      <p><button class="open-button" id="bookKattWilliams" value="KATT WILLIAMS" onclick="filterSelector('kattWilliams'); openForm();">VIEW PROFILE</button></p>
+                  </div>
+              </div>
+    </div>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="img/logo.png" type="image/icon">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Aldrich|Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Duara</title>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="logo"><a href="#main"></a>DUARA</div>
+        <div class="links">
+            <ul>
+                <li>HOME</li>
+                <li>CONTACT US</li>
+                <li>LOG IN</li>
+                <li><input type="text" name="search" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button></li>
+            </ul>
+        </div>
+    </div>
+    <div id="slider">
+        <figure>
+            <img src="img/artist.jpg" alt="Photo of a hip hop artist">
+            <img src="img/dj.jpg" alt="Photo of a Dj">
+            <img src="img/artist3.jpg" alt="Photo of a perfoming artist">
+            <img src="img/artist4.jpg" alt="Photo of a performing artist">
+            <img src="img/comedian1.jpg" alt="Photo of a comedian">
+        </figure>
+    </div>
+  <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <h4><a href="#"><strong>I AM </strong> an <span>ARTIST</span></a></h4></div>
+                <div class="col-md-3">
+                    <h4><a href="#"><strong>BOOK</strong> an <span>ARTIST</span></a></h4></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <div class="container" id="icons">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-1">
+                        <a href="https://www.facebook.com"><img src="images/facebook.png"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://www.flickr.com"><img src="images/flickr.png"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://www.skype.com"><img src="images/skype.png"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://www.google.com"><img src="images/g_plus.png"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://twitter.com"><img src="images/twitter.png"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://www.pinterest.com/"><img src="images/pinterest.png"></a>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
